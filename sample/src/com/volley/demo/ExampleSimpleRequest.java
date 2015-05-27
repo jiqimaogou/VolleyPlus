@@ -32,9 +32,8 @@ import com.volley.demo.util.MyVolley;
 
 /**
  * Demonstrates how to execute "plain" HTTP request, i.e. non-JSON.
- * 
- * @author Ognyan Bankov
  *
+ * @author Ognyan Bankov
  */
 public class ExampleSimpleRequest extends ActionBarActivity {
     private TextView mTvResult;
@@ -52,8 +51,8 @@ public class ExampleSimpleRequest extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 RequestQueue queue = MyVolley.getRequestQueue();
-                StringRequest myReq = new StringRequest(Method.GET, 
-                                                        "http://www.google.com/",
+                StringRequest myReq = new StringRequest(Method.GET,
+                                                        "http://www.baidu.com/",
                                                         createMyReqSuccessListener(),
                                                         createMyReqErrorListener());
 
